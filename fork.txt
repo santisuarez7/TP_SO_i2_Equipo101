@@ -1,1 +1,7 @@
+Nombre: Franco
 
+Apellido: Rivera Aldana
+
+IP: 192.168.0.12
+
+Hora: 10:12 am
