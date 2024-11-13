@@ -8,6 +8,9 @@ a- Con los comando:
 	git fetch upstream
 	git merge upstream/main
 
-b-Sí, puede
+b- Sí, puede
 
+c- No, GAMMA solo puede actualizar su fork al estado del repositorio original (BETA)
+
+d- No, los datos no se pierden. Git marca las líneas conflictivas y te permite elegir qué versión consevar
 
