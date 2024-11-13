@@ -14,3 +14,115 @@ c- No, GAMMA solo puede actualizar su fork al estado del repositorio original (B
 
 d- No, los datos no se pierden. Git marca las líneas conflictivas y te permite elegir qué versión consevar
 
+e-
+1. BETA crea el repositorio llamado : “TP_SO_i2 Equipo” con readme y un archivo llamado fork.txt
+
+Santiago Suárez (BETA):
+	(crea repositorio)
+	git clone https://github.com/santisuarez7/TP_SO_i2_Equipo101.git
+	touch fork.txt
+	git add .
+	git commit -m "Create fork.txt"
+	git push origin main
+	
+
+2. GAMMA hace FORK del repositorio, descarga su repositorio EN FORMA LOCAL, modifica el archivo agregando su nombre y apellido , la iP de la máquina y la hora, y hace el push a su repositorio.
+
+Franco Rivera Aldana (GAMMA):
+	(hace el fork)
+	git clone https://github.com/FrancoRiveraAldana/TP_SO_i2_Equipo101.git
+	nano fork.txt
+	(agrega los datos)
+	git add .
+	git commit -m “Modifico fork.txt”
+	git push origin main
+	(hace pull request)
+
+
+3. ALFA hace FORK del repositorio de BETA, descarga su repositorio EN FORMA LOCAL, modifica el archivo agregando su nombre y apellido , la iP de la máquina y la hora, y hace el push a su repositorio.
+
+Aisha Pereyra Sole (ALFA):
+	(hace el fork)
+	git clone https://github.com/xXDINOCOOLXx/TP_SO_i2_Equipo101.git
+	nano fork.txt 
+	(agrega los datos)
+	git add .
+	git commit -m "Modifico fork.txt"
+	git push origin main
+	(hace pull request)
+
+
+4. BETA, descarga su repositorio EN FORMA LOCAL,crea en el repositorio un archivo llamado NuevoDato.txt.
+
+Santiago Suárez (BETA):
+	git clone https://github.com/santisuarez7/TP_SO_i2_Equipo101.git 
+	touch NuevoDato.txt
+	git add .
+	git commit -m “Create NuevoDato.txt”
+	git push origin main
+
+
+5. GAMMA y ALFA deberían lograr actualizar su repositorio al estado que lo dejó BETA
+
+Franco Rivera Aldana (GAMMA):
+	git remote add upstream https://github.com/santisuarez7/TP_SO_i2_Equipo101.git 
+	git fetch upstream
+	git merge upstream/main
+	git push origin main
+
+
+Aisha Pereyra Sole (ALFA):
+	git remote add upstream https://github.com/santisuarez7/TP_SO_i2_Equipo101.git 
+	git fetch upstream
+	git merge upstream/main
+	git push origin main
+
+
+6. el BETA crea dentro del archivo “respuesta_I2_EquipoX”
+Apellido y nombre de los alumnos que participaron de la interacción
+
+Santiago Suárez (BETA):
+	touch respuesta_I2_Equipo101.txt
+	nano respuesta_I2_Equipo101.txt
+	(agrego apellido y nombre de los participantes)
+	git add .
+	git commit -m “Create respuesta_I2_Equipo101.txt”
+	git push origin main
+
+
+7. GAMMA sube las respuestas a- y b-
+	
+Franco Rivera Aldana (GAMMA):
+	git fetch upstream
+	git merge upstream/main
+	nano respuesta_I2_Equipo101.txt
+	(responde preguntas a y b)
+	git add .
+	git commit -m “Respondidas a y b”
+	git push origin main
+	(hace pull request)
+
+
+8. BETA sube la c- y d-
+
+Santiago Suárez (BETA):
+	git fetch upstream
+	git merge upstream/main
+	nano respuesta_I2_Equipo101.txt
+	(responde preguntas c y d)
+	git add .
+	git commit -m “Respondidas c y d”
+	git push origin main
+
+9. ALFA sube la e-
+
+Aisha Pereyra Sole (ALFA):
+	git fetch upstream
+	git merge upstream/main
+	nano respuesta_I2_Equipo101.txt
+	(responde pregunta e)
+	git add .
+	git commit -m “Respondida e”
+	git push origin main
+	(hace pull request)
+
