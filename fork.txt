@@ -3,5 +3,8 @@ Nombre: Franco
 Apellido: Rivera Aldana
 
 IP: 192.168.0.12
-
 Hora: 10:12 am
+Nombre: Aisha 
+Apellido: Pereyra Sole
+IP de la máquina: 192.168.56.1
+Hora: 21:29
