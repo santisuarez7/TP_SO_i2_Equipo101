@@ -1,3 +1,13 @@
 Pereyra Sole Aisha
 Suárez Santiago
 Rivera Aldana Franco
+
+
+
+a- Con los comando:
+	git fetch upstream
+	git merge upstream/main
+
+b-Sí, puede
+
+
